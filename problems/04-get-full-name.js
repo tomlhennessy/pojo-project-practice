@@ -9,9 +9,10 @@ getFullName(p1); // => 'John Doe'
 let p2 = {firstName: 'Charlie', lastName: 'Brown', age: 9};
 getFullName(p2); // => 'Charlie Brown'
 ***********************************************************************/
-
+// Define a function called getFullName that takes a person object as input
 function getFullName(person) {
-  // Your code here
+  // concatenate the firstName and LastName properties of the person object with a space in between
+  return person.firstName + ' ' + person.lastName;
 }
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/

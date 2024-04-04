@@ -10,8 +10,9 @@ restSum(0); // => 0
 ***********************************************************************/
 
 function restSum(...otherNums) {
-  // Your code here
+  return otherNums.reduce((total, current) => total + current, 0);
 }
-
+// iterates over each element in the 'args' array to sum up all the values
+// initial value for the sum is set to 0
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = restSum;
